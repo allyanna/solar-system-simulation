@@ -1,0 +1,165 @@
+main {
+  height: 100%;
+}
+
+body {
+  background-image: url(https://images.unsplash.com/photo-1429305336325-b84ace7eba3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60);
+  background-size: cover;
+  /*this helps move the nav to the top*/
+  margin: 0;
+  font-family: 'Work Sans', sans-serif;
+  font-weight: bold;
+}
+
+header {
+  background: lightslategray;
+}
+
+/*I believe this is to move back the line*/
+header::after {
+  content: '';
+  display: table;
+  clear: both;
+}
+
+
+/*this was replaced as just a text*/
+.logo {
+  float: right;
+  padding-right: 30px;
+  color: #444;
+
+  /*padding: 10px 0;*/
+}
+
+nav {
+  float: left;
+}
+
+nav ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/*means it will show next to each other*/
+nav li {
+  display: inline-block;
+  /*puts them next to eachother, spaces them out, spaces them from the top*/
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 30px;
+
+  position: relative;
+}
+
+nav a {
+  color: #444;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 15px;
+
+}
+
+
+/*change color*/
+nav a:hover {
+  color: #000;
+}
+
+/*you want the line to be 0% 
+before you hover over it*/
+nav a::before {
+  content:'';
+  display: block;
+  height: 5px;
+  background-color: #444;
+
+  position: absolute;
+  top: -30;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+
+/*after the before, it will then
+extend to 100% when you hover over it*/
+nav a:hover::before {
+  width: 100%;
+}
+
+
+
+
+
+footer {
+  /*make sure that your main
+  is set to 100% for the height*/
+position: relative;
+left: 0;
+bottom: 0;
+width: 100%;
+background-color: lightslategray; 
+margin: 0;
+font-size: 15px;
+float: left;
+padding: 10px;
+
+}
+
+footer a{
+  text-decoration: none;
+  color: #444;
+  padding: 10px;
+  transform: uppercase;
+}
+
+footer ul {
+
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+footer li {
+  /*puts them next to eachother, spaces them out, spaces them from the top*/
+  margin-right: 40px;
+  margin-left: 40px;
+  margin-top: 10px;
+}
+
+/*this is the color when you over the a text*/
+footer a::hover{
+  color: #000;
+}
+
+/*you want the line to be 0% 
+before you hover over it,
+and relative allowed the hover
+to only go fully on the length
+of the text*/
+footer a::before {
+  content:'';
+  display: block;
+  height: 5px;
+  background-color: #444;
+ /*the position is what fixed it*/
+  position: relative;
+  top: -15;
+  width: 0%;
+
+  transition: all ease-in-out 250ms;
+}
+
+
+/*after the before, it will then
+extend to 100% when you hover over it*/
+footer a:hover::before {
+  width: 100%;
+}
+
+
+
+
+
