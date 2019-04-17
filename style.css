@@ -1,11 +1,12 @@
-main {
-  height: 100%;
-}
+
 
 body {
-  background-image: url(https://images.unsplash.com/photo-1429305336325-b84ace7eba3b?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1000&q=60);
+  /*
+  background-image: url(https://images.unsplash.com/photo-1424460421773-58b49adfc68a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60);
   background-size: cover;
+  */
   /*this helps move the nav to the top*/
+  background: black;
   margin: 0;
   font-family: 'Work Sans', sans-serif;
   font-weight: bold;
@@ -96,7 +97,7 @@ nav a:hover::before {
 footer {
   /*make sure that your main
   is set to 100% for the height*/
-position: relative;
+position: fixed;
 left: 0;
 bottom: 0;
 width: 100%;
@@ -127,6 +128,7 @@ footer li {
   margin-right: 40px;
   margin-left: 40px;
   margin-top: 10px;
+  display:inline-block;
 }
 
 /*this is the color when you over the a text*/
@@ -158,6 +160,208 @@ extend to 100% when you hover over it*/
 footer a:hover::before {
   width: 100%;
 }
+
+
+/*for the solar system
+.orbit {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 1px solid #000000;
+  animation: myR 5s linear infinite;
+  border-radius: 500px;
+}
+
+.planet {
+  position: absolute;
+  top: 50px;
+  color: #ffffff;
+  background-color:#ff0000;
+  width: 20px;
+  height: 20px;
+  animation: myR 2s linear infinite;
+  border-radius: 50px;
+}
+
+@keyframes myR {
+  100% {transform: rotate(360deg);}
+}
+
+*/
+
+.orbit {
+  position: absolute;
+  border-radius: 100%;
+  border: 1px white solid;
+}
+
+#circle-orbit-container {
+  height: 300px;
+  justify-content: center;
+  display:flex;
+  align-items:center;
+  position: absolute;
+  top: 60%;
+  right:60%;
+  transform: translate(-50%, -50%); 
+
+}
+
+#first-orbit {
+  top: 75px;
+  left: 75px;
+  width: 150px;
+  height: 150px;
+  -webkit-animation: spin-right 2s linear infinite;
+  animation: spin-right 2s linear infinite;
+}
+
+.first-orbit-circle {
+  position: absolute;
+  top: 62px;
+  left: -6px;
+  height: 10px;
+  width: 10px;
+  border-radius: 100%;
+  background-color: #ff0000;
+}
+
+#second-orbit {
+  top: 35px;
+  left: 35px;
+  width: 225px;
+  height: 225px;
+  -webkit-animation: spin-right 4s linear infinite;
+  animation: spin-right 4s linear infinite;
+}
+
+.second-orbit-circle {
+  position: absolute;
+  top: 25px;
+  left: 19px;
+  height: 20px;
+  width: 20px;
+  border-radius: 100%;
+  background-color: #00ff00;
+}
+
+#third-orbit {
+  top: 0;
+  left: 0;
+  width: 294px;
+  height: 294px;
+  -webkit-animation: spin-right 6s linear infinite;
+  animation: spin-right 6s linear infinite;
+}
+
+.third-orbit-circle {
+  position: absolute;
+  top: -17px;
+  left: 125px;
+  height: 30px;
+  width: 30px;
+  border-radius: 100%;
+  background-color: #0000ff;
+}
+
+#fourth-orbit {
+  top: -40px;
+  left: -40px;
+  width: 380px;
+  height: 380px;
+  -webkit-animation: spin-right 8s linear infinite;
+  animation: spin-right 8s linear infinite;
+}
+
+.fourth-orbit-circle {
+position: absolute;
+top: -20px;
+left: 150px;
+height: 40px;
+width: 40px;
+border-radius: 100%;
+background-color: #f0f0f0;
+}
+
+#fifth-orbit {
+top: -75px;
+left: -75px;
+width: 460px;
+height: 460px;
+-webkit-animation: spin-right 8s linear infinite;
+animation: spin-right 8s linear infinite;
+}
+
+.fifth-orbit-circle {
+position: absolute;
+top: -10x;
+left: 100px;
+height: 45px;
+width: 45px;
+border-radius: 100%;
+background-color: yellow;
+}
+
+#sixth-orbit {
+  top: -110px;
+  left: -110px;
+  width: 540px;
+  height: 540px;
+  -webkit-animation: spin-right 12s linear infinite;
+  animation: spin-right 12s linear infinite;
+  }
+  
+  .sixth-orbit-circle {
+  position: absolute;
+  top: 5px;
+  left: 120px;
+  height: 45px;
+  width: 45px;
+  border-radius: 100%;
+  background-color:pink;
+  }
+
+
+
+#seventh-orbit {
+  left: -160px;
+  width: 650px;
+  height: 650px;
+  -webkit-animation: spin-right 12s linear infinite;
+  animation: spin-right 12s linear infinite;
+  }
+  
+  .seventh-orbit-circle {
+  position: absolute;
+  top: -10x;
+  left: 145px;
+  height: 55px;
+  width: 55px;
+  border-radius: 100%;
+  background-color:pink;
+  }
+
+  #sun {
+    position: absolute;
+    height: 70px;
+    width: 70px;
+    background-color: #fae20a;
+    top: 115px;
+    left: 115px;
+    border-radius: 50%;
+    box-shadow: 0 0 40px orange;
+  }
+
+
+  
+@-webkit-keyframes spin-right {
+  100% { transform: rotate(360deg); }
+}
+
+
+
+
+
 
 
 
