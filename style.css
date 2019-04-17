@@ -1,18 +1,33 @@
+body {
+  background-color: #000000;
+}
+
 .orbit-container {
   position: relative;
-  top: 200px;
-  left: 200px;
+  top: 300px;
+  left: 600px;
   height: 600px;
   width: 600px;
 }
 
+.sun {
+  position: absolute;
+  top:115px;
+  left:117px;
+  width: 70px;
+  height: 70px;
+  color:yellow;
+  background-color:yellow;
+  box-shadow: 0 0 60px orange;
+  border-radius: 50px
+}
 .orbit-one {
   position: absolute;
   top: 75px;
   left: 75px;
    width: 150px;
    height: 150px;
-   border: 1px solid #000000;
+   border: 1px solid #ffffff;
    animation: myR 3s linear infinite;
    border-radius: 500px;
 }
@@ -22,6 +37,7 @@
   top: 50px;
   color: #ffffff;
   background-color: #767180;
+  box-shadow: 0 0 20px #a29bb1;
   width: 7px;
   height: 7px;
   animation: myR 2s linear infinite;
@@ -34,8 +50,8 @@
   left: 38px;
    width: 225px;
    height: 225px;
-   border: 1px solid #000000;
-   animation: myR 5s linear infinite;
+   border: 1px solid #ffffff;
+   animation: myR 6s linear infinite;
    border-radius: 500px;
 }
 
@@ -44,6 +60,7 @@
   top: 60px;
   color: #ffffff;
   background-color: #EDE3B4;
+  box-shadow: 0 0 28px rgb(235, 219, 149);
   width: 18px;
   height: 18px;
   animation: myR 2s linear infinite;
@@ -52,12 +69,12 @@
 
 .orbit-three {
   position: absolute;
-  top: 2px;
-  left: 2px;
+  top: 3px;
+  left: 3px;
    width: 300px;
    height: 300px;
-   border: 1px solid #000000;
-   animation: myR 7s linear infinite;
+   border: 1px solid #ffffff;
+   animation: myR 10s linear infinite;
    border-radius: 500px;
 }
 
@@ -66,6 +83,7 @@
   top: 90px;
   color: #ffffff;
   background-color: #6EA7F0;
+  box-shadow: 0 0 30px rgb(73, 146, 241);
   width: 20px;
   height: 20px;
   animation: myR 2s linear infinite;
@@ -78,8 +96,8 @@
   left: -20px;
    width: 350px;
    height: 350px;
-   border: 1px solid #000000;
-   animation: myR 9s linear infinite;
+   border: 1px solid #ffffff;
+   animation: myR 18s linear infinite;
    border-radius: 500px;
 }
 
@@ -88,6 +106,7 @@
   top: 90px;
   color: #ffffff;
   background-color: #942934;
+  box-shadow: 0 0 36px #cc3443;
   width: 25px;
   height: 25px;
   animation: myR 2s linear infinite;
@@ -100,8 +119,8 @@
   left: -57px;
    width: 425px;
    height: 425px;
-   border: 1px solid #000000;
-   animation: myR 11s linear infinite;
+   border: 1px solid #ffffff;
+   animation: myR 118s linear infinite;
    border-radius: 500px;
 }
 
@@ -110,6 +129,7 @@
   top: 110px;
   color: #ffffff;
   background-color: #DD901F;
+  box-shadow: 0 0 45px rgb(247, 155, 17); 
   width: 35px;
   height: 35px;
   animation: myR 2s linear infinite;
@@ -122,8 +142,8 @@
   left: -93px;
    width: 500px;
    height: 500px;
-   border: 1px solid #000000;
-   animation: myR 13s linear infinite;
+   border: 1px solid #ffffff;
+   animation: myR 295s linear infinite;
    border-radius: 500px;
 }
 
@@ -132,6 +152,7 @@
   top: 170px;
   color: #ffffff;
   background-color: #DDDCAC;
+  box-shadow: 0 0 30px rgb(228, 226, 134); 
   width: 20px;
   height: 20px;
   animation: myR 2s linear infinite;
@@ -144,8 +165,8 @@
   left: -118px;
    width: 550px;
    height: 550px;
-   border: 1px solid #000000;
-   animation: myR 15s linear infinite;
+   border: 1px solid #ffffff;
+   animation: myR 840s linear infinite;
    border-radius: 500px;
 }
 
@@ -154,6 +175,7 @@
   top: 190px;
   color: #ffffff;
   background-color: #D3E7EB;
+  box-shadow: 0 0 35px rgb(138, 206, 219);
   width: 25px;
   height: 25px;
   animation: myR 2s linear infinite;
@@ -166,8 +188,8 @@
   left: -180px;
    width: 675px;
    height: 675px;
-   border: 1px solid #000000;
-   animation: myR 17s linear infinite;
+   border: 1px solid #ffffff;
+   animation: myR 1640s linear infinite;
    border-radius: 500px;
 }
 
@@ -176,6 +198,7 @@
   top: 240px;
   color: #ffffff;
   background-color: #298091;
+  box-shadow: 0 0 30px #54a3b3;
   width: 21px;
   height: 21px;
   animation: myR 2s linear infinite;
@@ -184,4 +207,11 @@
 
 @keyframes myR {
   100% { transform: rotate(360deg); }
+}
+
+.btn {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  color: red;
 }
