@@ -1,0 +1,132 @@
+/* class selector */
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+header {
+  background-color: rgb(55, 163, 142);
+  height: 150px;
+  line-height: 150px;
+}
+
+header a{
+  color: rgb(209, 213, 240);
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+/* id selector */
+#header-title {
+  display: block;
+  float: left;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#header-nav {
+  display: block;
+  float: right;
+  margin-top: 0;
+}
+
+#header-nav li{
+  display: inline;
+  padding-left: 20px;
+}
+
+/* footer */
+footer {
+  background-color: rgb(83, 83, 83);
+  position: absolute;
+  width: 100%;
+  font: bold 16px sans-serif; 
+  /* "font:" takes care of (font-weight, font-size, font-family) */
+  padding: 55px 50px;
+}
+
+footer .footer-left{
+  width: 40%;
+}
+
+footer .footer-left, footer .footer-right{
+  display: inline-block;
+  vertical-align: center;
+}
+
+footer .footer-links {
+  color: white;
+  margin: 20px 0 12px;
+  padding: 0;
+}
+
+footer .footer-links a {
+  text-decoration: none;
+  color: inherit;
+}
+
+footer .footer-name {
+  font-size: 14px;
+  font-weight: bold;
+  margin: 0;
+  color: rgb(190, 190, 190);
+}
+
+footer .footer-right {
+  width: 35%;
+}
+
+footer .footer-right p{
+  display: inline-block;
+  color: white;
+  vertical-align: middle;
+  margin: 0;
+}
+
+footer .footer-right h4{
+  color: rgb(190, 190, 190);
+  font-size: 14px;
+}
+
+.PageContent{
+  background-color: rgb(83, 83, 83);
+}
+
+
+
+body {
+  background-color: #0B0D0A;
+  text-align: center;
+  color: white;
+  font-family: Helvetica;
+}
+
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+#title {
+  font-size: 80px;
+}
+
+#subheading {
+  font-size: 30px;
+  margin-bottom: -10px;
+}
+
+#paragraph {
+  font-size: 15px;
+  margin: 15px 10% 15px 10%;
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+#row {
+  display: block;
+  
+}
