@@ -1,188 +1,96 @@
-
-
 body {
-  /*
-  background-image: url(https://images.unsplash.com/photo-1424460421773-58b49adfc68a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1100&q=60);
-  background-size: cover;
-  */
-  /*this helps move the nav to the top*/
-  background: black;
-  margin: 0;
-  font-family: 'Work Sans', sans-serif;
-  font-weight: bold;
+  background-color: #000000;
 }
 
-header {
-  background: lightslategray;
-}
-
-/*I believe this is to move back the line*/
-header::after {
-  content: '';
-  display: table;
-  clear: both;
-}
-
-
-/*this was replaced as just a text*/
-.logo {
-  float: right;
-  padding-right: 30px;
-  color: #444;
-
-  /*padding: 10px 0;*/
-}
-
-nav {
-  float: left;
-}
-
-nav ul {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-/*means it will show next to each other*/
-nav li {
-  display: inline-block;
-  /*puts them next to eachother, spaces them out, spaces them from the top*/
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-top: 30px;
-
+.orbit-container {
   position: relative;
+  top: 300px;
+  left: 600px;
+  height: 600px;
+  width: 600px;
 }
 
-nav a {
-  color: #444;
-  text-decoration: none;
-  text-transform: uppercase;
-  font-size: 15px;
-
-}
-
-
-/*change color*/
-nav a:hover {
-  color: #000;
-}
-
-/*you want the line to be 0% 
-before you hover over it*/
-nav a::before {
-  content:'';
-  display: block;
-  height: 5px;
-  background-color: #444;
-
+.sun {
   position: absolute;
-  top: -30;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
+  top:115px;
+  left:117px;
+  width: 70px;
+  height: 70px;
+  color:yellow;
+  background-color:yellow;
+  box-shadow: 0 0 60px orange;
+  border-radius: 50px
+}
+.orbit-one {
+  position: absolute;
+  top: 75px;
+  left: 75px;
+   width: 150px;
+   height: 150px;
+   border: 1px solid #ffffff;
+   animation: myR 3s linear infinite;
+   border-radius: 500px;
 }
 
-
-/*after the before, it will then
-extend to 100% when you hover over it*/
-nav a:hover::before {
-  width: 100%;
-}
-
-
-
-
-
-footer {
-  /*make sure that your main
-  is set to 100% for the height*/
-position: fixed;
-left: 0;
-bottom: 0;
-width: 100%;
-background-color: lightslategray; 
-margin: 0;
-font-size: 15px;
-float: left;
-padding: 10px;
-
-}
-
-footer a{
-  text-decoration: none;
-  color: #444;
-  padding: 10px;
-  transform: uppercase;
-}
-
-footer ul {
-
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-footer li {
-  /*puts them next to eachother, spaces them out, spaces them from the top*/
-  margin-right: 40px;
-  margin-left: 40px;
-  margin-top: 10px;
-  display:inline-block;
-}
-
-/*this is the color when you over the a text*/
-footer a::hover{
-  color: #000;
-}
-
-/*you want the line to be 0% 
-before you hover over it,
-and relative allowed the hover
-to only go fully on the length
-of the text*/
-footer a::before {
-  content:'';
-  display: block;
-  height: 5px;
-  background-color: #444;
- /*the position is what fixed it*/
-  position: relative;
-  top: -15;
-  width: 0%;
-
-  transition: all ease-in-out 250ms;
-}
-
-
-/*after the before, it will then
-extend to 100% when you hover over it*/
-footer a:hover::before {
-  width: 100%;
-}
-
-
-/*for the solar system
-.orbit {
-  position: relative;
-  width: 200px;
-  height: 200px;
-  border: 1px solid #000000;
-  animation: myR 5s linear infinite;
-  border-radius: 500px;
-}
-
-.planet {
+.planet-one {
   position: absolute;
   top: 50px;
   color: #ffffff;
-  background-color:#ff0000;
+  background-color: #767180;
+  box-shadow: 0 0 20px #a29bb1;
+  width: 7px;
+  height: 7px;
+  animation: myR 2s linear infinite;
+  border-radius: 50px;
+}
+
+.orbit-two {
+  position: relative;
+  top: 38px;
+  left: 38px;
+   width: 225px;
+   height: 225px;
+   border: 1px solid #ffffff;
+   animation: myR 6s linear infinite;
+   border-radius: 500px;
+}
+
+.planet-two {
+  position: absolute;
+  top: 60px;
+  color: #ffffff;
+  background-color: #EDE3B4;
+  box-shadow: 0 0 28px rgb(235, 219, 149);
+  width: 18px;
+  height: 18px;
+  animation: myR 2s linear infinite;
+  border-radius: 50px;
+}
+
+.orbit-three {
+  position: absolute;
+  top: 3px;
+  left: 3px;
+   width: 300px;
+   height: 300px;
+   border: 1px solid #ffffff;
+   animation: myR 10s linear infinite;
+   border-radius: 500px;
+}
+
+.planet-three {
+  position: absolute;
+  top: 90px;
+  color: #ffffff;
+  background-color: #6EA7F0;
+  box-shadow: 0 0 30px rgb(73, 146, 241);
   width: 20px;
   height: 20px;
   animation: myR 2s linear infinite;
   border-radius: 50px;
 }
 
+<<<<<<< .merge_file_0TSuuy
 @keyframes myR {
   100% {transform: rotate(360deg);}
 }
@@ -367,3 +275,130 @@ background-color: yellow;
 
 
 
+=======
+.orbit-four {
+  position: absolute;
+  top: -20px;
+  left: -20px;
+   width: 350px;
+   height: 350px;
+   border: 1px solid #ffffff;
+   animation: myR 18s linear infinite;
+   border-radius: 500px;
+}
+
+.planet-four {
+  position: absolute;
+  top: 90px;
+  color: #ffffff;
+  background-color: #942934;
+  box-shadow: 0 0 36px #cc3443;
+  width: 25px;
+  height: 25px;
+  animation: myR 2s linear infinite;
+  border-radius: 50px;
+}
+
+.orbit-five {
+ position: absolute;
+  top: -57px;
+  left: -57px;
+   width: 425px;
+   height: 425px;
+   border: 1px solid #ffffff;
+   animation: myR 118s linear infinite;
+   border-radius: 500px;
+}
+
+.planet-five {
+  position: absolute;
+  top: 110px;
+  color: #ffffff;
+  background-color: #DD901F;
+  box-shadow: 0 0 45px rgb(247, 155, 17); 
+  width: 35px;
+  height: 35px;
+  animation: myR 2s linear infinite;
+  border-radius: 50px;
+}
+
+.orbit-six {
+  position: absolute;
+  top: -93px;
+  left: -93px;
+   width: 500px;
+   height: 500px;
+   border: 1px solid #ffffff;
+   animation: myR 295s linear infinite;
+   border-radius: 500px;
+}
+
+.planet-six {
+  position: absolute;
+  top: 170px;
+  color: #ffffff;
+  background-color: #DDDCAC;
+  box-shadow: 0 0 30px rgb(228, 226, 134); 
+  width: 20px;
+  height: 20px;
+  animation: myR 2s linear infinite;
+  border-radius: 50px;
+}
+
+.orbit-seven {
+  position: absolute;
+  top: -118px;
+  left: -118px;
+   width: 550px;
+   height: 550px;
+   border: 1px solid #ffffff;
+   animation: myR 840s linear infinite;
+   border-radius: 500px;
+}
+
+.planet-seven {
+  position: absolute;
+  top: 190px;
+  color: #ffffff;
+  background-color: #D3E7EB;
+  box-shadow: 0 0 35px rgb(138, 206, 219);
+  width: 25px;
+  height: 25px;
+  animation: myR 2s linear infinite;
+  border-radius: 50px;
+}
+
+.orbit-eight {
+  position: absolute;
+  top: -180px;
+  left: -180px;
+   width: 675px;
+   height: 675px;
+   border: 1px solid #ffffff;
+   animation: myR 1640s linear infinite;
+   border-radius: 500px;
+}
+
+.planet-eight {
+  position: absolute;
+  top: 240px;
+  color: #ffffff;
+  background-color: #298091;
+  box-shadow: 0 0 30px #54a3b3;
+  width: 21px;
+  height: 21px;
+  animation: myR 2s linear infinite;
+  border-radius: 50px;
+}
+
+@keyframes myR {
+  100% { transform: rotate(360deg); }
+}
+
+.btn {
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  color: red;
+}
+>>>>>>> .merge_file_QigW7E
